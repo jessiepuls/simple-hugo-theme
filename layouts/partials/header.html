@@ -1,9 +1,11 @@
 {{ "<!-- BEGIN HEADER PANEL -->" | safeHTML }}
 
 <section class="header-panel">
-	<div class="wrapper">
-		<h1>{{ .Site.Params.header.headertitle }}</h1>
-		<p>{{ .Site.Params.header.headerdiscription }}</p>
-		<a href="{{ .Site.Params.header.btnbluehref }}" class="button primary">{{ .Site.Params.header.btnbluetext }}</a>
-	</div>
+    <div class="wrapper">
+        <h1>{{ .Site.Params.header.headertitle }}</h1>
+        <p>{{ .Site.Params.header.headerdiscription }}</p>
+        {{ range .Site.Params.header.button }}
+        <a href="{{ .href }}" class="button primary">{{ .text }}</a>
+        {{end}}
+    </div>
 </section> {{ "<!-- END HEADER PANEL -->" | safeHTML }}
