@@ -37,9 +37,10 @@
 
 					{{ "<!-- Partials that make up the site -->" | safeHTML }}
 		  			{{ partial "nav.html" . }}
-		
-					{{ partial "header.html" . }}
-						
+
+					{{ if .Params.showHeader }}
+						{{ partial "header.html" . }}
+					{{ end }}
 					<!-- Add your own content here -->
 							
 					{{ partial "footer.html" . }}
