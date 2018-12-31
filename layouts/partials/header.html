@@ -1,0 +1,9 @@
+{{ "<!-- BEGIN HEADER PANEL -->" | safeHTML }}
+
+<section class="header-panel">
+	<div class="wrapper">
+		<h1>{{ .Site.Params.header.headertitle }}</h1>
+		<p>{{ .Site.Params.header.headerdiscription }}</p>
+		<a href="{{ .Site.Params.header.btnbluehref }}" class="button primary">{{ .Site.Params.header.btnbluetext }}</a>
+	</div>
+</section> {{ "<!-- END HEADER PANEL -->" | safeHTML }}

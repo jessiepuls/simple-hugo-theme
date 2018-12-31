@@ -1,0 +1,15 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/spf13/hugoThemes#themetoml for an example
+
+name = "simple"
+license = "MIT"
+licenselink = "https://github.com/jessiepuls/simple-hugo-theme/blob/master/LICENSE.md"
+description = "A simple hugo theme using foundation 6"
+homepage = "https://github.com/jessiepuls/simple-hugo-theme"
+tags = ["hugo", "foundation"]
+features = ["foundation", "hugo", "mobile"]
+min_version = 0.53
+
+[author]
+  name = "Jessie Puls"
+  homepage = "jessiepuls.com"
